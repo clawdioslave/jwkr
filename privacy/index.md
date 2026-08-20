@@ -1,14 +1,26 @@
 # JWKR Privacy Policy
 
-*Effective: August 19, 2026*
+*Effective: August 20, 2026*
 
 JWKR is built so that we could not read your data even if we wanted to — the app has
-no server, no accounts, and no analytics.
+no server of its own, no accounts, and no analytics. It makes exactly two kinds of
+outbound request, both described below: Apple's map services, and a public
+opening-hours lookup. Neither carries anything that identifies you.
 
 ## What we collect
 
-Nothing. JWKR collects no personal data and transmits none to us or to any third
-party. We have no servers.
+Nothing. JWKR collects no personal data, and we have no servers to collect it to.
+
+## Opening hours
+
+When you plan a trip, JWKR asks the public OpenStreetMap Overpass API for the
+published opening hours of businesses in that city. That request contains a
+geographic bounding box for the destination and nothing else — no name, no device
+identifier, no profile, no indication of which specific places you're interested
+in. It happens once per destination and is cached for the session. If it fails or
+you're offline, the app falls back to its own category estimates and works
+normally. Overpass is operated by the OpenStreetMap Foundation under
+[their privacy policy](https://wiki.osmfoundation.org/wiki/Privacy_Policy).
 
 ## What stays on your device
 
